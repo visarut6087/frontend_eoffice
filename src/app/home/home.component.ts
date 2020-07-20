@@ -12,9 +12,9 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openNav() {
+  openNav() {0
     //ความกว้างของ slide menu
-    document.getElementById("mySidenav").style.width = "150px";
+    document.getElementById("mySidenav").style.width = "300px";
   }
 
   closeNav() {

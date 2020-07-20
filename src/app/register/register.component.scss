@@ -25,7 +25,7 @@ body {
 .container-fluid {
   //   height: 100%;
   //   background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
-  background-image: url('../../assets/classroom.jpg');
+  background-image: url('../../assets/2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   align-content: center;
@@ -37,23 +37,23 @@ body {
   width: 400px;
   //   background-color: rgba(0, 0, 0, 0.5) !important;
   // ปรับสีพื้นหลังฟอร์ม
-  background-image: radial-gradient(#ce4141, rgb(0, 0, 0, 0.7));
-  background-color: rgb(0, 0, 0, 0.7);
+  background-image: radial-gradient(#01d9ff, rgba(255, 255, 255, 0.7));
+  background-color: rgba(0, 0, 0, 0.89);
 }
 
 .social_icon span {
   font-size: 60px;
   margin-left: 10px;
-  color: #32f9dd;
+  color: #000000c7;
 }
 
 .social_icon span:hover {
-  color: white;
+  color: rgb(0, 0, 0);
   cursor: pointer;
 }
 
 .card-header h3 {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .social_icon {
@@ -66,8 +66,8 @@ body {
 .input-group-prepend span {
   width: 50px;
   // เปลี่ยนสีพื้นหลัง หลังไอคอน
-  background-color: rgb(79, 231, 173);
-  color: black;
+  background-color: rgb(17, 0, 255);
+  color: rgb(255, 255, 255);
   border: 0 !important;
 }
 
@@ -78,7 +78,7 @@ input:focus {
 }
 
 .remember {
-  color: white;
+  color: rgb(255, 0, 0);
 }
 
 .remember input {
@@ -89,9 +89,9 @@ input:focus {
 }
 
 .login_btn {
-  color: black;
+  color: rgb(255, 255, 255);
   //เปลี่ยนสีปุ่ม register
-  background-color: #e9be3e;
+  background-color: #0011ff;
   width: 100px;
   cursor: pointer;
 }
@@ -102,16 +102,16 @@ input:focus {
 }
 
 .links {
-  color: white;
+  color: rgb(255, 0, 0);
 }
 
 //เปลี่ยนสี login text
 .link-text {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .creator-text {
-  color: white;
+  color: rgb(38, 0, 255);
 }
 
 .links a {

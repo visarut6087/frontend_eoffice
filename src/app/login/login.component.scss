@@ -4,7 +4,7 @@
 
 html,
 body {
-  background-image: url("/assets/login-bg.jpg");
+  background-image: url("/assets/1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -32,7 +32,7 @@ body {
   margin-bottom: auto;
   width: 400px;
   //พื้นหลัง form
-  background-color: rgba(0, 0, 0, 0.3) !important;
+  background-color: rgba(104, 229, 245, 0.192) !important;
 }
 
 .social_icon span {
@@ -47,7 +47,7 @@ body {
 }
 
 .card-header h3 {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .social_icon {
@@ -58,8 +58,8 @@ body {
 
 .input-group-prepend span {
   width: 50px;
-  background-color: #FFC312;
-  color: black;
+  background-color: #0400fd;
+  color: rgb(255, 255, 255);
   border: 0 !important;
 }
 
@@ -70,7 +70,7 @@ input:focus {
 }
 
 .remember {
-  color: white;
+  color: rgb(255, 0, 0);
 }
 
 .remember input {
@@ -81,8 +81,8 @@ input:focus {
 }
 
 .login_btn {
-  color: black;
-  background-color: #FFC312;
+  color: rgb(255, 255, 255);
+  background-color: #0400ff;
   width: 100px;
   cursor: pointer;
 }
@@ -93,10 +93,11 @@ input:focus {
 }
 
 .links {
-  color: white;
+  color: rgb(243, 4, 4);
 }
 
 .links a {
+  color: rgb(250, 250, 250);
   margin-left: 4px;
 }
 

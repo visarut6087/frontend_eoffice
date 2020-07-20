@@ -7,9 +7,9 @@
         </div>
         <div class="card-body">
           <div class="logo-container">
-            <img src="../../assets/logo_div.png" />
+            <img src="../../assets/register.png" />
           </div>
-          <form [formGroup]="registerForm">
+          <form [formGroup]="form">
             <div class="input-group form-group">
               <!-- เริ่มมกล่อง input -->
               <div class="input-group-prepend">
@@ -18,9 +18,10 @@
               <select formControlName="rank" class="form-control" placeholder="ยศ">
                 <option value="" disabled selected>ยศ</option>
                 <option value="นาย">นาย</option>
-                <option value="นาง">นาง</option>
-                <option value="นางสาว">นางสาว</option>
-                <option value="ส.ต.">ส.ต.</option>
+                <option value="สิบโท">สิบโท</option>
+                <option value="จ่าสิบเอก">จ่าสิบเอก</option>
+                <option value="ประทวน">ประทวน</option>
+                <option value="สัญญาบัตร">สัญญาบัตร</option>
               </select>
             </div><!-- จบกล่อง input -->
             <div class="input-group form-group">
@@ -40,14 +41,14 @@
                 <span class="input-group-text"><i class="fas fa-user"></i></span>
               </div>
 
-              <input formControlName="id_mil" type="text" class="form-control" placeholder="เลขประจำตัวทหาร" />
+              <input formControlName="mil_id" type="text" class="form-control" placeholder="เลขประจำตัวทหาร" />
             </div>
-
+            <div style="color:white;font-size:12px">[***ไม่ต้องพิมพ์คำว่า @rtarf.mi.th]</div>
             <div class="input-group form-group">
               <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fas fa-user"></i></span>
               </div>
-              <input formControlName="username" type="text" class="form-control" placeholder="@rtarf.mi.th" />
+              <input formControlName="rtarf_mail" type="text" class="form-control" placeholder="@rtarf.mi.th" />
             </div>
             <div class="input-group form-group">
               <div class="input-group-prepend">
@@ -77,7 +78,7 @@
             Have an account?<a [routerLink]="['/login']" class="link-text">Login</a>
           </div>
           <div class="d-flex justify-content-center">
-            <a class="creator-text" href="#">Create by Weerayut</a>
+            <a class="creator-text" href="#">Create by Group 2</a>
           </div>
         </div>
       </div>

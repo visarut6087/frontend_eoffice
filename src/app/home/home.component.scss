@@ -1,13 +1,13 @@
 /* The side navigation menu */
 .sidenav {
   height: 100%;
-  width: 0;
+  width: 300px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   //เปลี่ยนสีพื้นหลัง slide menu
-  background-color: #111;
+  background-color: rgba(35, 255, 6, 0.3);
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
@@ -19,7 +19,7 @@
   text-decoration: none;
   font-size: 25px;
   //สีตัวอักษร slide menu และ icon
-  color: #ffffff;
+  color: #0c0101;
   display: block;
   transition: 0.3s;
 }
@@ -64,15 +64,15 @@
 .container-main {
   text-align: center;
   // background dummy
-  // background-image: url('../../assets/classroom.jpg');
-  background-color: #b9b9b9;
+  // background-image: url('../../assets/4.jpg');
+  background-color: #000000;
 
   .content {
     margin: auto;
     width: 400px;
     height: 600px;
     // background home
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgb(255, 255, 255);
     position: relative;
 
     .content-header {
@@ -83,13 +83,13 @@
 
       .menu-btn {
         //เปลี่ยนสี Burger Menu
-        color: black;
+        color: rgb(0, 0, 0);
         vertical-align: middle;
       }
 
       .text {
         //เปลี่ยนสี title
-        color: black;
+        color: rgb(12, 12, 12);
         margin-left: 25px;
         font-size: 30px;
         vertical-align: middle;
@@ -109,7 +109,7 @@
 
     .logo-container {
       img {
-        width: 100px;
+        width: 200px;
         // border-radius: 35px;
         // border: 2px solid #a97979a6;
       }
@@ -117,11 +117,14 @@
 
     .title-container {
       //เปลี่ยนชื่อสำนักงาน
-      color: orange;
+      color: rgb(0, 132, 255);
+      font-size: 20px;
+      vertical-align: middle;
+      font-weight: bold;
     }
 
     .content-footer {
-      background-color: blue;
+      background-color: rgb(42, 253, 0);
       position: absolute;
       margin: auto;
       text-align: left;
@@ -129,10 +132,10 @@
       bottom: 0;
       height: 50px;
       //เงา bottom
-      box-shadow: 0px -3px 3px 0px violet;
+      box-shadow: 0px -3px 3px 0px rgb(40, 73, 2);
 
       .icon-container {
-        color: white;
+        color: rgb(7, 1, 1);
 
         i {
           margin-top: 8px;
