@@ -12,6 +12,8 @@ import { HttpClientModule } from "@angular/common/http";
 import { HomeComponent } from './home/home.component';
 import { LogiComponent } from './logi/logi.component';
 import { CommandAddFileComponent } from './command-add-file/command-add-file.component';
+import { CommandSelectUserComponent } from './command-select-user/command-select-user.component';
+import { CommandCheckComponent } from './command-check/command-check.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { CommandAddFileComponent } from './command-add-file/command-add-file.com
     RegisterComponent,
     HomeComponent,
     LogiComponent,
-    CommandAddFileComponent
+    CommandAddFileComponent,
+    CommandSelectUserComponent,
+    CommandCheckComponent
   ],
   imports: [
     BrowserModule,
