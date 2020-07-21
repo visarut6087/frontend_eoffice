@@ -14,6 +14,7 @@ import { LogiComponent } from './logi/logi.component';
 import { CommandAddFileComponent } from './command-add-file/command-add-file.component';
 import { CommandSelectUserComponent } from './command-select-user/command-select-user.component';
 import { CommandCheckComponent } from './command-check/command-check.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CommandCheckComponent } from './command-check/command-check.component';
     LogiComponent,
     CommandAddFileComponent,
     CommandSelectUserComponent,
-    CommandCheckComponent
+    CommandCheckComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
