@@ -48,7 +48,10 @@ export class BackendService {
       this.http
         .post<any>(backendUrl + "login", { formData }, this.httpOptions)
         .pipe()
-        .subscribe((data) => {
+        .subscribe((data: any) => {
+          if (data.status == true) {
+            localStorage.setItem("token", data.token);
+          }
           resolve(data);
         });
     });
