@@ -1,3 +1,4 @@
+// ctrl + A
 import { Component, OnInit } from "@angular/core";
 import { FormGroup, FormBuilder, Validators } from "@angular/forms";
 import { Router, ActivatedRoute } from "@angular/router";
@@ -38,7 +39,7 @@ export class LoginComponent implements OnInit {
 
     this.backendService.postLogin(this.loginForm.value).then((data) => {
       console.log(data);
-      if (data.item != null) {
+      if (data.status) {
         this.router.navigate(["/home"]);
       } else {
         this.submitting = false;
