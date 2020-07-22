@@ -1,0 +1,61 @@
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <a [routerLink]="['/owner-document-list']"><i class="fas fa-comment-medical fa-lg mr-2"></i>คลังเอกสาร</a>
+  <a [routerLink]="['/user-document-list']">เอกสารเวียนทราบ</a>
+  <a href="#">เอกสารส่งออก</a>
+  <a href="#">เอกสารขออนุมัติ</a>
+  <a [routerLink]="['/command-add-file']">สั่งการ/เวียนทราบ</a>
+  <a href="#">รายงานการใช้กระดาษ</a>
+  <a [routerLink]="['/logout']"><i class="fas fa-sign-out-alt fa-lg mr-2"></i>ออกจากระบบ</a>
+</div>
+
+<div class="container-main" id="main">
+  <div class="content">
+    <div class="content-header">
+      <span (click)="openNav()" class="menu-btn"><i class="fas fa-bars fa-3x"></i></span>
+      <!-- เปลี่ยน title -->
+      <span class="notify-container">
+        <span class="icon">
+          <i class="far fa-bell fa-3x mr-2"></i>
+        </span>
+        <span class="icon">
+          <i class="far fa-envelope fa-3x mr-2"></i>
+        </span>
+        <span class="icon">
+          <i class="fas fa-th-large fa-3x mr-2"></i>
+        </span>
+      </span>
+    </div>
+    <div class="main-content">
+      <div class="top-container">
+        <div class="label-container">
+          <div class="text">คลังเอกสาร</div>
+        </div>
+      </div>
+      <div class="document-container">
+        <div class="card">
+          <h5 class="card-header">รายการเอกสาร</h5>
+          <div class="card-body pb-0" *ngFor="let item of documentList">
+            <h5 class="card-title" *ngFor="let file of item.files"><a href="{{backendUrl}}preview/{{file._id}}"
+                target="_blank"> {{file.name}}</a></h5>
+            <p class="card-text mb-1 text-muted"><small>ส่งถึง:</small></p>
+            <div class="card-text mb-1 border p-1" *ngFor="let user of item.users_action">{{user.name}}
+              <div *ngIf="user.status != null">
+                <i title="รับทราบ" style="color: green;" class="fas fa-check-circle"></i>
+                <small class="text-muted">
+                  เมื่อ:
+                  {{formalDate(user.action_date)}}
+                  {{formalTime(user.action_date)}}</small>
+              </div>
+              <i *ngIf="user.status == null" title="ยังไม่อ่าน" style="color: rgb(189, 189, 0);"
+                class="fas fa-exclamation-triangle"></i>
+            </div>
+            <p class="card-text mb-1 text-muted"><small>ส่งเมื่อ: {{formalDate(item.createAt)}}
+                {{formalTime(item.createAt)}}</small></p>
+            <hr class="my-0">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
