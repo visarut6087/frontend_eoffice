@@ -1,0 +1,50 @@
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <a [routerLink]="['/owner-document-list']"><i class="fas fa-comment-medical fa-lg mr-2"></i>คลังเอกสาร</a>
+  <a [routerLink]="['/user-document-list']">เอกสารเวียนทราบ</a>
+  <a href="#">เอกสารส่งออก</a>
+  <a href="#">เอกสารขออนุมัติ</a>
+  <a [routerLink]="['/command-add-file']">สั่งการ/เวียนทราบ</a>
+  <a href="#">รายงานการใช้กระดาษ</a>
+  <a [routerLink]="['/user-setting']"><i class="fas fa-user-cog fa-lg mr-2"></i>ตั้งค่าผู้ใช้งาน</a>
+  <a [routerLink]="['/logout']"><i class="fas fa-sign-out-alt fa-lg mr-2"></i>ออกจากระบบ</a>
+</div>
+
+<div class="container-main" id="main">
+  <div class="content">
+    <div class="content-header">
+      <span (click)="openNav()" class="menu-btn"><i class="fas fa-bars fa-3x"></i></span>
+      <!-- เปลี่ยน title -->
+      <span class="notify-container">
+        <span class="icon">
+          <i class="far fa-bell fa-3x mr-2"></i>
+        </span>
+        <span class="icon">
+          <i class="far fa-envelope fa-3x mr-2"></i>
+        </span>
+        <span class="icon">
+          <i class="fas fa-th-large fa-3x mr-2"></i>
+        </span>
+      </span>
+    </div>
+    <div class="main-content">
+      <div class="top-container">
+        <div class="label-container">
+          <div class="text">ตั้งค่า UID ของ Line</div>
+        </div>
+      </div>
+      <div class="document-container">
+        <div class="card">
+          <h5 class="card-header">UID</h5>
+          <div class="card-body pb-0" [formGroup]="form" style="text-align: center;">
+            <div class="mt-2">
+              <input formControlName="uid" type="text" class="form-control" placeholder="UID Line" />
+            </div>
+            <hr class="my-0">
+            <button type="button" class="btn btn-primary my-2" (click)="submit()">บันทึก</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
