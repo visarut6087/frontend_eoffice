@@ -13,12 +13,17 @@ export class OwnerListDocumentComponent implements OnInit {
   documentList: Array<any>;
   backendUrl = environment.backendUrl;
   constructor(private backendService: BackendService) { }
+  actionNumber: Number = 0;
 
   ngOnInit(): void {
     this.userData = jwt_decode(localStorage.getItem("token"));
     this.backendService.getDocumentByOwner(this.userData.id).then(data => {
       console.log(data.dataList);
       this.documentList = data.dataList;
+
+      this.backendService.getCountDocumentByUser(this.userData.id).then(data => {
+        this.actionNumber = data.dataList.users_action;
+      })
     });
   }
 
